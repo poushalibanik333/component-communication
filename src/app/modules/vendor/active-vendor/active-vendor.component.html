@@ -1,0 +1,14 @@
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+      <th>Button</th>
+    </tr>
+    <tr *ngFor="let v of vendor">
+      <td>{{v.name}}</td>
+      <td>{{v.age}}</td>
+      <td>{{v.city}}</td>
+      <td><button (click)=onPressd(v)>Click</button></td>
+    </tr>
+  </table>
